@@ -31,10 +31,10 @@ function getFiltered() {
   result = result.filter((p) => p.category === category);
 }
   if (sort === "asc") {
-    result.sort((a, b) => b.price - a.price);
-  } else if (sort === "desc") {
-    result.sort((a, b) => a.price - b.price);
-  }
+  result.sort((a, b) => a.price - b.price);
+} else if (sort === "desc") {
+  result.sort((a, b) => b.price - a.price);
+}
 
   return result;
 }
