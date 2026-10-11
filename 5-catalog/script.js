@@ -28,9 +28,8 @@ function getFiltered() {
 }
 
   if (category !== "all") {
-    result = products.filter((p) => p.category !== category);
-  }
-
+  result = result.filter((p) => p.category === category);
+}
   if (sort === "asc") {
     result.sort((a, b) => b.price - a.price);
   } else if (sort === "desc") {
